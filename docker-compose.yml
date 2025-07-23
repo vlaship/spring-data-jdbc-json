@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:17.5-alpine3.21
+    container_name: postgres
+    environment:
+      POSTGRES_DB: bookdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
